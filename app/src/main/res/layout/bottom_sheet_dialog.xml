@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:id="@+id/bottom_sheet">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <EditText
+            android:id="@+id/bottom_name"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/bottom_mobile"
+            android:layout_below="@+id/bottom_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:digits="0123456789+"
+            android:maxLength="10"/>
+
+        <Button
+            android:id="@+id/bottom_save"
+            android:layout_below="@id/bottom_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SAVE"
+            android:visibility="visible"
+            android:background="@color/design_default_color_primary"/>
+
+        <Button
+            android:id="@+id/bottom_edit"
+            android:layout_below="@id/bottom_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT"
+            android:visibility="gone"
+            android:background="@color/design_default_color_primary"/>
+
+        <Button
+            android:id="@+id/bottom_delete"
+            android:layout_below="@id/bottom_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:background="@color/design_default_color_primary"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
